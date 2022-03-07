@@ -1,0 +1,2 @@
+para que funcione la firma electronica se debe instar itext version 3
+--------para generar el codigo QR se debe instalar qrcode Nuget 

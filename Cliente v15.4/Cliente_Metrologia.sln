@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Cliente_Metrologia", "Cliente_Metrologia\Cliente_Metrologia.vbproj", "{FDA48F67-06FD-4524-B932-5FD552A21258}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DATOS", "DATOS\DATOS.vbproj", "{C09B0065-0EF4-45D8-827E-05791F23C65E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Negocios", "Negocios\Negocios.vbproj", "{0F970944-2B51-45E4-B2A9-575E5DA70F38}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ReceptorMetrologia", "ReceptorMetrologia\ReceptorMetrologia.vdproj", "{74FC3BE6-B8AE-483B-AC0F-C6C8343FA3AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDA48F67-06FD-4524-B932-5FD552A21258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA48F67-06FD-4524-B932-5FD552A21258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA48F67-06FD-4524-B932-5FD552A21258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA48F67-06FD-4524-B932-5FD552A21258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09B0065-0EF4-45D8-827E-05791F23C65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09B0065-0EF4-45D8-827E-05791F23C65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09B0065-0EF4-45D8-827E-05791F23C65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09B0065-0EF4-45D8-827E-05791F23C65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F970944-2B51-45E4-B2A9-575E5DA70F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F970944-2B51-45E4-B2A9-575E5DA70F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F970944-2B51-45E4-B2A9-575E5DA70F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F970944-2B51-45E4-B2A9-575E5DA70F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FC3BE6-B8AE-483B-AC0F-C6C8343FA3AA}.Debug|Any CPU.ActiveCfg = Debug
+		{74FC3BE6-B8AE-483B-AC0F-C6C8343FA3AA}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C3E158C-07BB-4E9D-BAAA-7A6921DE8A96}
+	EndGlobalSection
+EndGlobal
