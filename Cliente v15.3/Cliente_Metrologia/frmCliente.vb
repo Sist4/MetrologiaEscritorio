@@ -187,22 +187,41 @@ Public Class frmCliente
 
             If inicia = True Then
                 If lapso = 125 Then
-                    Label1.Text = "Imprimiendo Documentos..." '"Procesando Información del Servidor FTP..."
+                    Try
+                        Label1.Text = "Imprimiendo Documentos..." '"Procesando Información del Servidor FTP..."
+
+                    Catch ex As Exception
+
+                    End Try
                     Application.DoEvents()
                     imprimir()
                     lapso = lapso + 1
                 ElseIf lapso = 65 Then
-                    Label1.Text = "Actualizando BDD..."
+                    Try
+                        Label1.Text = "Actualizando BDD..."
+
+                    Catch ex As Exception
+
+                    End Try
                     Application.DoEvents()
                     selector_clase()
                     lapso = lapso + 1
                 ElseIf lapso = 5 Then
-                    Label1.Text = "Procesando Información del Servidor FTP..."
+                    Try
+                        Label1.Text = "Procesando Información del Servidor FTP..."
+
+                    Catch ex As Exception
+
+                    End Try
                     Application.DoEvents()
                     lectura_srv()
                     lapso = lapso + 1
                 ElseIf lapso = 150 Then
-                    Label1.Text = "Eliminando procesos secundarios..."
+                    Try
+                        Label1.Text = "Eliminando procesos secundarios..."
+                    Catch ex As Exception
+
+                    End Try
                     Application.DoEvents()
                     matar_word()
                     inicia = False
@@ -6064,17 +6083,24 @@ aqui:
                 lugar_Calibracion = row(5).ToString()
 
                 Generar_Qr(proyec, lugar_Calibracion)
+
+
+
                 Select Case lector_1
+
                     Case "II"
+                        Lbl_Proceso.Text = "Generando el Informe: " & lector_0 & lector_1 & lector_2
 
                         Impresa_II(lector_0, lector_2, "O")
                     Case "III", "IIII"
-                        LiberarMemoria()
 
+                        LiberarMemoria()
+                        Lbl_Proceso.Text = "Generando el Informe: " & lector_0 & lector_1 & lector_2
                         Impresa_III(lector_0, lector_2, unidad_recibida, "P")
 
                         Impresa_III(lector_0, lector_2, unidad_recibida, "O")
                     Case "Camionera"
+                        Lbl_Proceso.Text = "Generando el Informe: " & lector_0 & lector_1 & lector_2
                         'matar_word()
                         Impresa_Cam(lector_0, lector_2, "P")
                         'matar_word()
@@ -7063,7 +7089,7 @@ aqui:
 
             Exit Sub
         Catch ex As Exception
-            MessageBox.Show(ex.ToString())
+            MessageBox.Show(ex.ToString() & " Proyecto:" & IdeComBpr)
             Return
         End Try
 
